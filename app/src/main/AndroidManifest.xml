@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EYatri">
+        <activity android:name=".Reset_password"></activity>
+        <activity android:name=".LoginPage" />
+        <activity android:name=".Profile_registration" />
+        <activity android:name=".New_pass" />
+        <activity android:name=".Current_pass" />
+        <activity android:name=".SplashScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
