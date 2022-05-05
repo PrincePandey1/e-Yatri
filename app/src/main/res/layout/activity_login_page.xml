@@ -1,9 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".LoginPage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        android:elevation="5dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+      <!---User  Name-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+     <ImageView
+         android:id="@+id/user_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="23dp"
+         android:layout_marginStart="10dp"
+          android:src="@drawable/username_user"
+         />
+
+       <androidx.appcompat.widget.AppCompatEditText
+
+           android:id="@+id/user_text_username"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="User Name"
+           android:textColorHint="@color/purple_700"
+           android:textColor="@color/purple_700"
+           android:layout_toRightOf="@+id/user_image"
+           android:inputType="text" />
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/user_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/username_lock"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/user_text_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:textColor="@color/purple_700"
+                        android:textColorHint="@color/purple_700"
+                        android:layout_toRightOf="@+id/user_password"
+                        android:inputType="text" />
+                </RelativeLayout>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+           <Button
+               android:id="@+id/user_login"
+               android:layout_marginTop="15dp"
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="LOGIN"
+               />
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
