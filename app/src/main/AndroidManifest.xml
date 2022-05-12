@@ -9,21 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EYatri">
-        <activity android:name=".Reset_password"></activity>
+        <activity android:name=".Select_Payment_method"></activity>
+        <activity android:name=".Reset_password" />
         <activity android:name=".LoginPage" />
         <activity android:name=".Profile_registration" />
         <activity android:name=".New_pass" />
         <activity android:name=".Current_pass" />
-        <activity android:name=".SplashScreen" >
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
